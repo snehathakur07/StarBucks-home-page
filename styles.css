@@ -1,0 +1,283 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "sodo-bold", Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "sodo-bold";
+    src: url(./SODOSANS/bold.ttf);
+}
+
+@font-face {
+    font-family: "Sodo-sans-reg";
+    src: url(./SODOSANS/sodo-sans-8.ttf);
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+header {
+    padding: 1.4rem 3rem;
+    background: #fff;
+    font-size: 0.8rem;
+    letter-spacing: 0.1rem;
+
+}
+
+.right-links {
+    letter-spacing: 0;
+
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar>* {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.navbar ul {
+    display: flex;
+    gap: 2rem;
+    /* font-weight: 900; */
+}
+
+.buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+.green {
+    position: sticky;
+    top: -0.1%;
+    background: #1e3932;
+    color: white;
+    padding: 1rem 3rem;
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+    font-size: 0.8rem;
+    box-shadow: 0 0 5px black;
+}
+
+button {
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    border: 1px solid black;
+}
+
+.join button {
+    background: black;
+    color: white;
+}
+
+.start {
+    /* background-color:#d4e9e2;    */
+    background-image: url(./bg-img.webp);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    background-color: #d4e9e2;
+    flex-wrap: wrap;
+}
+
+.text {
+    flex: 1;
+    padding: 2rem 2.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    font-size: 120%;
+}
+
+.text h2 {
+    font-size: 200%;
+}
+
+.text .head {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.empty {
+    flex: 1;
+}
+
+.bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 1.4rem;
+}
+
+.btn button {
+    background: #008248;
+    border: none;
+    color: white;
+    transform: scale(1.15);
+}
+
+p {
+    font-family: "Sodo-sans-reg";
+}
+
+p>* {
+    font-family: "Sodo-sans-reg";
+}
+
+.guide {
+    padding: 5rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2,
+h4,
+span,
+h3 {
+    font-family: "Sodo-sans-reg";
+}
+
+h2 {
+    font-size: 28px;
+}
+
+.how-to-start {
+    padding: 0 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.steps {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+.steps>* {
+    flex: 1 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.steps h4 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+
+.guide p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 2rem;
+}
+
+.icon {
+    padding-bottom: 2rem;
+}
+
+.favs {
+    display: flex;
+    flex-direction: column;
+    background: #f1f8f6;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 0 0 0;
+}
+
+.top {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.buttons-star {
+    display: flex;
+    max-width: 540px;
+}
+
+.btn-star button {
+    border: none;
+    background: none;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.star {
+    color: gold;
+}
+.favs-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap:1.5rem;
+    padding:2rem 0;
+}
+.favs-content h3{
+    font-size:24px;
+    font-weight:600;
+}
+
+.outer{
+    background-color: #d4e9e2;
+    width:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 0 7px 9px -7px rgba(0,0,0,.14);
+}
+.favs-content>* {
+    flex-basis: calc(50% - 50px);
+    max-width:375px;
+}
+
+.image,
+.can-do { 
+    flex: 1 1 100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:1rem;
+}
+.image{
+    display:flex;
+    justify-content: end;
+}
+@media screen and (min-width: 768px) {
+    .favs-content>* {
+        flex-basis: calc(50% - 20px);
+    }
+}
